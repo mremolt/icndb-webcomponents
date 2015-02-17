@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>ICNDB with Web Components</title>
+
+  <meta name="description" content="Experimenting">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <script src="bower_components/object.observe/dist/object-observe-lite.min.js"></script>
+  <script src="lib/token-list.min.js"></script>
+  <script src="bower_components/webcomponentsjs/webcomponents.min.js"></script>
+  <script src="bower_components/director/build/director.min.js"></script>
+</head>
+<body>
+
+
+<h1>The ICNDB</h1>
+
+<ul>
+  <li><a href="#/main">home</a></li>
+  <li><a href="#/jokesList">jokes list</a></li>
+</ul>
+
+
+<div id="content"></div>
+
+<footer>
+  The current time is
+  <current-time></current-time>
+</footer>
+
+<script src="jspm_packages/system.js"></script>
+<script src="config.js"></script>
+<!--<script src="app.js"></script>-->
+
+<script>
+  System.import('icndb/main/app');
+</script>
+
+</body>
+</html>

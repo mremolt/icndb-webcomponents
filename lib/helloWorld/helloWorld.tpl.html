@@ -1,0 +1,34 @@
+<style>
+  h1 {
+    color: red;
+  }
+
+  div {
+    border: 1px solid red;
+    display: block;
+  }
+
+  :unresolved {
+    border: 1px dashed red;
+    display: inline-block;
+  }
+</style>
+
+<div>
+  <h1>Web Components, welcome { cn.firstName }</h1>
+  <img src="http://webcomponents.org/img/logo.svg">
+
+  <p>Counter: { cn.counter }</p>
+
+  <p>Testing { cn.person.firstName } { cn.person.lastName }</p>
+
+  <ul>
+    <li rv-each-number="cn.numbers">{ number.value }</li>
+  </ul>
+
+  <select rv-value="cn.selectedNumber" onChange="cn.selectNumber(this.value)">
+    <option rv-each-number="cn.numbers">{ number.value }</option>
+  </select>
+
+  <p>You chose number { cn.selectedNumber }</p>
+</div>

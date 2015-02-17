@@ -1,0 +1,21 @@
+{
+  "name": "icndb-webcomponents",
+  "version": "0.0.0",
+  "authors": [
+    "Marc Remolt <marc.remolt@dcs-fuerth.de>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "object.observe": "~0.2.1",
+    "webcomponentsjs": "webcomponents/webcomponentsjs#~0.5.4",
+    "director": "~1.2.8"
+  }
+}
